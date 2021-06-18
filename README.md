@@ -1,4 +1,12 @@
+# 説明
+- 無駄言語のフロント部分
+- Vercelにデプロイされる予定
+- 本体はpages/index.tsx
+
+# 以下デフォルト(create-next-appで自動生成)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
