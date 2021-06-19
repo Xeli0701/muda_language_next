@@ -1,16 +1,33 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+.modal__overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0,0,0);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
 }
-
-* {
-  box-sizing: border-box;
+.is-opened{
+  visibility: visible;
+  opacity: 1;
+}
+.modal__box{
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  padding: 30px 20px;
+}
+.modal__closeBtn{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
