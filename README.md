@@ -20,6 +20,9 @@ BrainFxck系と同じです。
 
 つまり、無駄です。
 
+# 関連API
+https://github.com/Xeli0701/muda_language_api
+
 # 以下デフォルト(create-next-appで自動生成)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
