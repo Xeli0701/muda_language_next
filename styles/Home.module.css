@@ -220,6 +220,8 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   color: #67c5ff;
+  margin: 10px;
+  padding: 10px;
   border: solid 2px #67c5ff;
   border-radius: 3px;
   position: relative;
