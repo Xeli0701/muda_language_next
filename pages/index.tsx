@@ -71,11 +71,11 @@ export default function Home() {
       <div className={styles.flex_description_container_topmargin}>
         <div className={styles.description}>Example</div>
         <details className={styles.description}>
-          <summary className={styles.code}>print("HelloWorld")</summary>
+          <summary className={styles.code}>print(&quot;HelloWorld&quot;)</summary>
           <textarea readOnly className={styles.text_area_wide} defaultValue="むだむだむだむだむだむだむだむだ、mudaむだむだむだむだ、mudaむだむだmudaむだむだむだmudaむだむだむだmudaむだMUDAMUDAMUDAMUDA無駄。mudaむだmudaむだmuda無駄mudamudaむだ、MUDA。MUDA無駄。mudamudaムダmuda無駄無駄無駄ムダむだむだむだむだむだむだむだムダムダむだむだむだムダmudamudaムダMUDA無駄ムダMUDAムダむだむだむだムダ無駄無駄無駄無駄無駄無駄ムダ無駄無駄無駄無駄無駄無駄無駄無駄ムダmudamudaむだムダmudaむだむだムダ" />
         </details>
         <details className={styles.description}>
-          <summary className={styles.code}>print("ABC")</summary>
+          <summary className={styles.code}>print(&quot;ABC&quot;)</summary>
           <textarea readOnly className={styles.text_area_wide} defaultValue="むだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだムダむだムダむだムダmudaむだむだむだむだむだむだむだむだむだむだムダ" />
         </details>
         <details className={styles.description}>
