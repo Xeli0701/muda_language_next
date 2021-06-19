@@ -30,7 +30,6 @@ export default function Home() {
         <h1>MudaLang</h1>
         <nav>
           <div>無駄言語をオンライン上でコンパイルします。</div>
-          <div >Created by <a href="https://twitter.com/Xeli0701" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Xeli0701</a></div>
         </nav>
       </header>
 
