@@ -1,20 +1,22 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /*height: 100vh;
+  padding: 0 0.5rem;
+  */
+  background-color: #e6e6e6;
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .footer {
@@ -31,6 +33,29 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.header {
+  padding: 30px 5% 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(211, 250, 255);
+  border-radius: 0% 0% 25% 25%;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+.header nav {
+  margin: 0 0 0 auto;
+  padding: 0;
+  font-size: 20px;
 }
 
 .title a {
@@ -56,8 +81,10 @@
 }
 
 .description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+  color: #051125;/*文字色*/
+  /*線の種類（点線）2px 線色*/
+  width: auto;
+  margin: 10px;
 }
 
 .code {
@@ -113,9 +140,126 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+.flex_row_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 800px;
+}
+
+.flex_column_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.flex_description_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  height: 50px;
+  width: 100%;
+}
+
+.flex_description_container_topmargin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  margin-top: 50px;
+  padding-top: 100px;
+  height: 50px;
+  width: 100%;
+}
+
+.flex_item{
+  margin: auto;
+}
+
+.text_area {
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 2.0px);
+  -webkit-backdrop-filter: blur( 2.0px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  font-size: 0.9rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.text_area_wide {
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 2.0px);
+  -webkit-backdrop-filter: blur( 2.0px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  object-fit: cover;
+  width: 1000px;
+  height: 70px;
+  font-size: 0.9rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.btn_flat_border{
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn_flat_border:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+
+@media (max-width: 800px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .flex_row_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 800px;
+  }
+  
+  .flex_column_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: auto;
+  }
+  
+  .header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .header nav {
+    margin: 0 0 0 auto;
+    padding: 0;
+    font-size: 10px;
   }
 }
