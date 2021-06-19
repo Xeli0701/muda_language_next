@@ -94,12 +94,20 @@ export default function Home() {
               <div className="modal__box">
                 <button className="modal__closeBtn" onClick={() => setModal(false)}>×</button>
                 <div className="m-8 text-2xl text-white">無駄言語コンパイラへようこそ！</div>
-                <div className="m-2 text-white">このサービスは無駄言語(mudaLang)をコンパイルするために用いられます。</div>
-                <div className="m-2 text-white">左のボックスに入れて、真ん中のボタンを押すと、右のボックスに結果が出力されます！</div>
-                <div className="m-2 text-white">無駄言語のサンプルコードはサイト下部に折りたたまれています👍</div>
-                <div className="m-2 text-white">言語仕様は<a href="https://twitter.com/Xeli0701" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">こちら</a>を確認してください！</div>
-                <div className="m-2 text-xs text-white">(要するに、Brainfxck系言語と言う存在も価値も時間も全てが無駄な言語です)</div>
-                <div className="m-2 text-white" >Created by <a href="https://twitter.com/Xeli0701" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Xeli0701</a></div>
+                  <div className="m-2 ml-16 text-white">このサービスは無駄言語(mudaLang)をコンパイルするために用いられます。</div>
+                <div className="m-8 text-xl text-white">使い方</div>
+                  <div className="m-2 ml-16 text-white">左のボックスに入れて、真ん中のボタンを押すと、右のボックスに結果が出力されます！</div>
+                  <div className="m-2 ml-16 text-white">無駄言語のサンプルコードはサイト下部Exampleに折りたたまれています👍</div>
+                  <div className="m-2 ml-16 text-white">言語仕様は<a href="https://github.com/Xeli0701/muda_language_next#%E8%A8%80%E8%AA%9E%E4%BB%95%E6%A7%98" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">こちら</a>を確認してください！</div>
+                  <div className="m-2 ml-16 text-xs text-white">(要するに、Brainfxck系言語と言う存在も価値も時間も全てが無駄な言語です。あとHerokuのFreeプランなのでボタンを押しても20秒ぐらい反応しない時があります。)</div>
+                <div className="m-8 text-xl text-white">Repository</div>
+                  <div className="m-4 ml-16"><a href="https://github.com/Xeli0701/muda_language_next" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">Next.js</a></div>
+                  <div className="m-4 ml-16"><a href="https://github.com/Xeli0701/muda_language_api" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">FastAPI</a></div>
+                  <div className="m-4 ml-16"><a href="https://muda-language-api.herokuapp.com/docs" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">API Document</a></div>
+                <div className="m-8 text-xl text-white">作った人・連絡先</div>
+                <div className="m-8 ml-16 text-white" >
+                  <a href="https://twitter.com/Xeli0701" rel="noreferrer" target="_blank" className="text-blue-500 font-bold rounded">Xeli0701</a>
+                </div>
               </div>
             </div>
           </div>
