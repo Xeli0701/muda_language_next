@@ -30,7 +30,7 @@ export default function Home() {
         <h1>MudaLang</h1>
         <nav>
           <div>無駄言語をオンライン上でコンパイルします。</div>
-          <div >Created by <a href="https://twitter.com/Xeli0701" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Xeli0701</a></div>
+          <div >Created by <a href="https://twitter.com/Xeli0701" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Xeli0701</a></div>
         </nav>
       </header>
 
@@ -97,9 +97,9 @@ export default function Home() {
                 <div className="m-2 text-white">このサービスは無駄言語(mudaLang)をコンパイルするために用いられます。</div>
                 <div className="m-2 text-white">左のボックスに入れて、真ん中のボタンを押すと、右のボックスに結果が出力されます！</div>
                 <div className="m-2 text-white">無駄言語のサンプルコードはサイト下部に折りたたまれています👍</div>
-                <div className="m-2 text-white">言語仕様は<a href="https://twitter.com/Xeli0701" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">こちら</a>を確認してください！</div>
+                <div className="m-2 text-white">言語仕様は<a href="https://twitter.com/Xeli0701" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">こちら</a>を確認してください！</div>
                 <div className="m-2 text-xs text-white">(要するに、Brainfxck系言語と言う存在も価値も時間も全てが無駄な言語です)</div>
-                <div className="m-2 text-white" >Created by <a href="https://twitter.com/Xeli0701" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Xeli0701</a></div>
+                <div className="m-2 text-white" >Created by <a href="https://twitter.com/Xeli0701" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Xeli0701</a></div>
               </div>
             </div>
           </div>
