@@ -81,9 +81,9 @@
 }
 
 .description {
-  color: #6594e0;/*文字色*/
+  color: #051125;/*文字色*/
   /*線の種類（点線）2px 線色*/
-
+  width: auto;
   margin: 10px;
 }
 
@@ -154,8 +154,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: auto;
   width: auto;
+}
+
+.flex_description_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  height: 50px;
+  width: 100%;
+}
+
+.flex_description_container_topmargin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  margin-top: 50px;
+  padding-top: 100px;
+  height: 50px;
+  width: 100%;
 }
 
 .flex_item{
@@ -171,6 +193,20 @@
   object-fit: cover;
   width: 300px;
   height: 300px;
+  font-size: 0.9rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.text_area_wide {
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 2.0px);
+  -webkit-backdrop-filter: blur( 2.0px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
+  object-fit: cover;
+  width: 1000px;
+  height: 70px;
   font-size: 0.9rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
