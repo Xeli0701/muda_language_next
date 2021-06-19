@@ -3,6 +3,23 @@
 - Vercelにデプロイされる予定
 - 本体はpages/index.tsx
 
+# 言語仕様
+BrainFxck系と同じです。
+| mudaLang | BrainFxck | 解説 |
+| ---- | ---- | ---- |
+| muda | > | メモリポインタをインクリメント |
+| MUDA | < | メモリポインタをデクリメント |
+| ムダ | . | メモリポインタが指し示す先に格納された変数を処理系に表示 |
+| むだ | + | メモリポインタが指し示す先に格納された変数をインクリメント |
+| 無駄 | - | メモリポインタが指し示す先に格納された変数をデクリメント |
+| ﾑﾀﾞ | , | 標準入力された値をメモリポインタが指し示す先に代入 |
+| 、 | [ | メモリポインタが指す値が0なら、対応する"]"までskip |
+| 。 | ] | メモリポインタが指す値が非0なら、対応する"["までジャンプ |
+
+理屈上はなんでも動きます。やる意味はないです。
+
+つまり、無駄です。
+
 # 以下デフォルト(create-next-appで自動生成)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
