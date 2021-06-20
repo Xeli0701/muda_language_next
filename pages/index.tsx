@@ -26,6 +26,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+    
       <header className={styles.header}>
         <h1>MudaLang</h1>
         <nav>
@@ -35,9 +37,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.flex_column_container}>
+          
           <div className={styles.flex_description_container}>
             <div className={styles.description}>無駄言語を左のテキストエリアに入力し、真ん中のボタンを押してください</div>
           </div>
+          
 
           <div className={styles.flex_row_container}>
             <div className={styles.flex_item}>
@@ -85,6 +89,10 @@ export default function Home() {
               <summary className={styles.code}>FizzBuzz</summary>
               <textarea readOnly className={styles.text_area_wide} defaultValue="むだむだむだむだむだむだむだむだむだむだむだむだ、無駄mudaむだむだむだむだむだむだmudaむだむだむだむだむだむだむだむだむだmudaむだむだむだむだむだmudaむだむだむだむだむだむだむだむだむだ むだmudaむだむだむだむだむだむだむだむだむだむだmudaむだむだむだmudamudamudamudamudamudaむだむだむだむだむだむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDA。muda無駄無駄muda 無駄無駄無駄mudaむだむだむだむだむだむだmuda無駄無駄無駄mudaむだむだmuda無駄無駄無駄無駄mudamudamudamudaむだむだむだmudaむだむだむだむだむだmudaむだむだむだむだ、mudamudamudaむだ、無駄MUDAMUDA、無駄mudamudaむだmudaむだMUDAMUDAMUDA。mudamudamuda、無駄MUDAMUDAMUDAむだmudamudamuda。むだMUDA、、無駄。muda無駄MUDAMUDA、無駄mudaむだmudaむだMUDAMUDA。mudamuda、無駄MUDAMUDAむだmudamuda。むだMUDA、、無駄。muda無駄MUDAMUDAMUDAむだmuda無駄muda。muda、無駄MUDAMUDAMUDA無駄無駄無駄無駄無駄無駄無駄無駄無駄mudaむだむだむだむだむだむだむだむだむだmudamudamudamudamudaむだMUDAMUDAMUDA。MUDA。muda、無駄MUDAむだむだむだむだむだむだむだ、MUDAMUDAむだむだむだむだむだむだむだmudamuda無駄。MUDAむだむだむだむだむだむだむだむだmudamuda。mudamudamuda。MUDAMUDAMUDAMUDAMUDAMUDA、MUDAMUDAMUDAMUDA。muda無駄、無駄MUDAMUDAむだmudaむだmuda。MUDA、無駄mudaむだMUDA。むだMUDA、、無駄。muda無駄MUDA。muda、無駄mudaむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAムダmudaムダmudamudamudaムダムダmudamudaむだmudamuda。mudamuda無駄、無駄MUDAMUDAMUDAむだmudaむだmudamuda。MUDAMUDA、無駄mudamudaむだMUDAMUDA。むだMUDA、、無駄。muda無駄MUDA。muda、無駄mudamudaむだむだむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAムダmudaムダmudaムダムダmudamudaむだmudamuda。MUDAむだMUDA、、無駄。muda無駄MUDA。muda、無駄mudamudamudamudamuda、mudamudamudamuda。MUDAMUDAMUDAMUDA、ムダMUDAMUDAMUDAMUDA。MUDA。MUDAMUDAムダmudamudamudamudamudamuda無駄。" />
             </details>
+            <details className={styles.description_details}>
+              <summary className={styles.code}>ラッシュ</summary>
+              <textarea readOnly className={styles.text_area_wide} defaultValue="、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraORAORAORAORA折羅。oraoraoraoraおらおらおらおらオラORAORAORAORA" />
+            </details>
           </div>
 
           <div className={styles.modal_help_button_container}>
@@ -92,19 +100,20 @@ export default function Home() {
             <div className={`modal__overlay ${modal && "is-opened"}`} onClick={e => { if (modalRef.current === e.target) setModal(false) }} ref={modalRef}>
               <div className="modal__box">
                 <button className="modal__closeBtn" onClick={() => setModal(false)}>×</button>
-                <div className="m-8 text-2xl text-white">無駄言語コンパイラへようこそ！</div>
-                  <div className="m-2 ml-16 text-white">このサービスは無駄言語(mudaLang)をコンパイルするために用いられます。</div>
-                <div className="m-8 text-xl text-white">使い方</div>
-                  <div className="m-2 ml-16 text-white">左のボックスに入れて、真ん中のボタンを押すと、右のボックスに結果が出力されます！</div>
-                  <div className="m-2 ml-16 text-white">無駄言語のサンプルコードはサイト下部Exampleに折りたたまれています👍</div>
-                  <div className="m-2 ml-16 text-white">言語仕様は<a href="https://github.com/Xeli0701/muda_language_next#%E8%A8%80%E8%AA%9E%E4%BB%95%E6%A7%98" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">こちら</a>を確認してください！</div>
-                  <div className="m-2 ml-16 text-xs text-white">(要するに、Brainfxck系言語と言う存在も価値も時間も全てが無駄な言語です。あとHerokuのFreeプランなのでボタンを押しても20秒ぐらい反応しない時があります。)</div>
-                <div className="m-8 text-xl text-white">Repository</div>
-                  <div className="m-4 ml-16"><a href="https://github.com/Xeli0701/muda_language_next" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">Next.js</a></div>
-                  <div className="m-4 ml-16"><a href="https://github.com/Xeli0701/muda_language_api" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">FastAPI</a></div>
-                  <div className="m-4 ml-16"><a href="https://muda-language-api.herokuapp.com/docs" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">API Document</a></div>
-                <div className="m-8 text-xl text-white">作った人・連絡先</div>
-                <div className="m-8 ml-16 text-white" >
+                <div className="m-4 text-lg text-white">使い方</div>
+                  <div className="m-1 ml-16 text-sm text-white">ようこそ。このサービスは無駄言語(mudaLang)をコンパイルするために用いられます。</div>
+                  <div className="m-1 ml-16 text-sm text-white">左のボックスに入れて、真ん中のボタンを押すと、右のボックスに結果が出力されます！</div>
+                  <div className="m-1 ml-16 text-sm text-white">無駄言語のサンプルコードはサイト下部Exampleに折りたたまれています👍</div>
+                  <div className="m-1 ml-16 text-sm text-white">言語仕様は<a href="https://github.com/Xeli0701/muda_language_next#%E8%A8%80%E8%AA%9E%E4%BB%95%E6%A7%98" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">こちら</a>を確認してください！</div>
+                  <div className="m-1 ml-16 text-xs text-white">(要するに、Brainfxck系言語と言う存在も価値も時間も全てが無駄な言語です。あとHerokuのFreeプランなのでボタンを押しても20秒ぐらい反応しない時があります。)</div>
+                <div className="m-4 text-lg text-white">Repository</div>
+                  <div className={styles.flex_row_container}>
+                    <div className="m-4 ml-16"><a href="https://github.com/Xeli0701/muda_language_next" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">Front(Next.js)</a></div>
+                    <div className="m-4 ml-16"><a href="https://github.com/Xeli0701/muda_language_api" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">Back(FastAPI)</a></div>
+                    <div className="m-4 ml-16"><a href="https://muda-language-api.herokuapp.com/docs" rel="noreferrer" target="_blank" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded">Back(API Document)</a></div>
+                  </div>
+                <div className="m-4 text-lg text-white">作った人・連絡先</div>
+                <div className="m-4 ml-16 text-white" >
                   <a href="https://twitter.com/Xeli0701" rel="noreferrer" target="_blank" className="text-blue-500 font-bold rounded">Xeli0701</a>
                 </div>
               </div>
