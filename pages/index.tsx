@@ -91,13 +91,13 @@ export default function Home() {
               <div className={styles.flex_item}>
                 <button className={styles.hvr_sweep_to_right}
                     onClick={() => setCode(code_helloworld)}
-                >print("Hello World!")</button>
+                >print(&quot;Hello World!&quot;)</button>
               </div>
               
               <div className={styles.flex_item}>
                 <button className={styles.hvr_sweep_to_right}
                     onClick={() => setCode(code_abc)}
-                >print("ABC")</button>
+                >print(&quot;ABC&quot;)</button>
               </div>
 
               <div className={styles.flex_item}>
