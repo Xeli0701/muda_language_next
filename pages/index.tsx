@@ -1,7 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
+
+
+const code_helloworld = "むだむだむだむだむだむだむだむだ、mudaむだむだむだむだ、mudaむだむだmudaむだむだむだmudaむだむだむだmudaむだMUDAMUDAMUDAMUDA無駄。mudaむだmudaむだmuda無駄mudamudaむだ、MUDA。MUDA無駄。mudamudaムダmuda無駄無駄無駄ムダむだむだむだむだむだむだむだムダムダむだむだむだムダmudamudaムダMUDA無駄ムダMUDAムダむだむだむだムダ無駄無駄無駄無駄無駄無駄ムダ無駄無駄無駄無駄無駄無駄無駄無駄ムダmudamudaむだムダmudaむだむだムダ"
+const code_abc = "むだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだムダむだムダむだムダmudaむだむだむだむだむだむだむだむだむだむだムダ"
+const code_FizzBuzz = "むだむだむだむだむだむだむだむだむだむだむだむだ、無駄mudaむだむだむだむだむだむだmudaむだむだむだむだむだむだむだむだむだmudaむだむだむだむだむだmudaむだむだむだむだむだむだむだむだむだ むだmudaむだむだむだむだむだむだむだむだむだむだmudaむだむだむだmudamudamudamudamudamudaむだむだむだむだむだむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDA。muda無駄無駄muda 無駄無駄無駄mudaむだむだむだむだむだむだmuda無駄無駄無駄mudaむだむだmuda無駄無駄無駄無駄mudamudamudamudaむだむだむだmudaむだむだむだむだむだmudaむだむだむだむだ、mudamudamudaむだ、無駄MUDAMUDA、無駄mudamudaむだmudaむだMUDAMUDAMUDA。mudamudamuda、無駄MUDAMUDAMUDAむだmudamudamuda。むだMUDA、、無駄。muda無駄MUDAMUDA、無駄mudaむだmudaむだMUDAMUDA。mudamuda、無駄MUDAMUDAむだmudamuda。むだMUDA、、無駄。muda無駄MUDAMUDAMUDAむだmuda無駄muda。muda、無駄MUDAMUDAMUDA無駄無駄無駄無駄無駄無駄無駄無駄無駄mudaむだむだむだむだむだむだむだむだむだmudamudamudamudamudaむだMUDAMUDAMUDA。MUDA。muda、無駄MUDAむだむだむだむだむだむだむだ、MUDAMUDAむだむだむだむだむだむだむだmudamuda無駄。MUDAむだむだむだむだむだむだむだむだmudamuda。mudamudamuda。MUDAMUDAMUDAMUDAMUDAMUDA、MUDAMUDAMUDAMUDA。muda無駄、無駄MUDAMUDAむだmudaむだmuda。MUDA、無駄mudaむだMUDA。むだMUDA、、無駄。muda無駄MUDA。muda、無駄mudaむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAムダmudaムダmudamudamudaムダムダmudamudaむだmudamuda。mudamuda無駄、無駄MUDAMUDAMUDAむだmudaむだmudamuda。MUDAMUDA、無駄mudamudaむだMUDAMUDA。むだMUDA、、無駄。muda無駄MUDA。muda、無駄mudamudaむだむだむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAムダmudaムダmudaムダムダmudamudaむだmudamuda。MUDAむだMUDA、、無駄。muda無駄MUDA。muda、無駄mudamudamudamudamuda、mudamudamudamuda。MUDAMUDAMUDAMUDA、ムダMUDAMUDAMUDAMUDA。MUDA。MUDAMUDAムダmudamudamudamudamudamuda無駄。"
+const code_rush = "、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraORAORAORAORA折羅。oraoraoraoraおらおらおらおらオラORAORAORAORA"
+
+// function setSampleCode(sample){
+//   const input_code = document.getElementById('input_code')
+//   input_code.value = sample
+// }
 
 export default function Home() {
   const [code, setCode] = useState("むだむだむだむだむだむだむだむだ、mudaむだむだむだむだ、mudaむだむだmudaむだむだむだmudaむだむだむだmudaむだMUDAMUDAMUDAMUDA無駄。mudaむだmudaむだmuda無駄mudamudaむだ、MUDA。MUDA無駄。mudamudaムダmuda無駄無駄無駄ムダむだむだむだむだむだむだむだムダムダむだむだむだムダmudamudaムダMUDA無駄ムダMUDAムダむだむだむだムダ無駄無駄無駄無駄無駄無駄ムダ無駄無駄無駄無駄無駄無駄無駄無駄ムダmudamudaむだムダmudaむだむだムダ");
@@ -17,7 +28,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Muda_language_Front" />
+        <meta property="og:title" content="無駄言語" />
         <meta property="og:description" content="Muda_language" />
         <meta property="og:site_name" content="無駄言語" />
         <meta property="og:image" content="" />
@@ -47,7 +58,7 @@ export default function Home() {
             <div className={styles.flex_item}>
               <label>
                 <div className={styles.description}>Muda_Language</div>
-                <textarea className={styles.text_area} defaultValue={code} onChange={(e) => setCode(e.target.value)} />
+                <textarea id="input_code" className={styles.text_area} value={code} onChange={(e) => setCode(e.target.value)} />
               </label>
             </div>
 
@@ -57,11 +68,10 @@ export default function Home() {
                   .then(response => response.json())
                   .then((data) => {
                     console.log(data)
-                    setResult("Error...");
                     if (data.status === "success") {
                       setResult(data.message);
                     }
-                  }).then(() => { console.log("send:" + code + "\n" + "response:" + result) })
+                  })
                 }
               >Press to Compile</button>
             </div>
@@ -77,22 +87,31 @@ export default function Home() {
 
           <div className={styles.flex_description_container_topmargin}>
             <div className={styles.description}>Example</div>
-            <details className={styles.description_details}>
-              <summary className={styles.code}>print(&quot;HelloWorld&quot;)</summary>
-              <textarea readOnly className={styles.text_area_wide} defaultValue="むだむだむだむだむだむだむだむだ、mudaむだむだむだむだ、mudaむだむだmudaむだむだむだmudaむだむだむだmudaむだMUDAMUDAMUDAMUDA無駄。mudaむだmudaむだmuda無駄mudamudaむだ、MUDA。MUDA無駄。mudamudaムダmuda無駄無駄無駄ムダむだむだむだむだむだむだむだムダムダむだむだむだムダmudamudaムダMUDA無駄ムダMUDAムダむだむだむだムダ無駄無駄無駄無駄無駄無駄ムダ無駄無駄無駄無駄無駄無駄無駄無駄ムダmudamudaむだムダmudaむだむだムダ" />
-            </details>
-            <details className={styles.description_details}>
-              <summary className={styles.code}>print(&quot;ABC&quot;)</summary>
-              <textarea readOnly className={styles.text_area_wide} defaultValue="むだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだむだムダむだムダむだムダmudaむだむだむだむだむだむだむだむだむだむだムダ" />
-            </details>
-            <details className={styles.description_details}>
-              <summary className={styles.code}>FizzBuzz</summary>
-              <textarea readOnly className={styles.text_area_wide} defaultValue="むだむだむだむだむだむだむだむだむだむだむだむだ、無駄mudaむだむだむだむだむだむだmudaむだむだむだむだむだむだむだむだむだmudaむだむだむだむだむだmudaむだむだむだむだむだむだむだむだむだ むだmudaむだむだむだむだむだむだむだむだむだむだmudaむだむだむだmudamudamudamudamudamudaむだむだむだむだむだむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDA。muda無駄無駄muda 無駄無駄無駄mudaむだむだむだむだむだむだmuda無駄無駄無駄mudaむだむだmuda無駄無駄無駄無駄mudamudamudamudaむだむだむだmudaむだむだむだむだむだmudaむだむだむだむだ、mudamudamudaむだ、無駄MUDAMUDA、無駄mudamudaむだmudaむだMUDAMUDAMUDA。mudamudamuda、無駄MUDAMUDAMUDAむだmudamudamuda。むだMUDA、、無駄。muda無駄MUDAMUDA、無駄mudaむだmudaむだMUDAMUDA。mudamuda、無駄MUDAMUDAむだmudamuda。むだMUDA、、無駄。muda無駄MUDAMUDAMUDAむだmuda無駄muda。muda、無駄MUDAMUDAMUDA無駄無駄無駄無駄無駄無駄無駄無駄無駄mudaむだむだむだむだむだむだむだむだむだmudamudamudamudamudaむだMUDAMUDAMUDA。MUDA。muda、無駄MUDAむだむだむだむだむだむだむだ、MUDAMUDAむだむだむだむだむだむだむだmudamuda無駄。MUDAむだむだむだむだむだむだむだむだmudamuda。mudamudamuda。MUDAMUDAMUDAMUDAMUDAMUDA、MUDAMUDAMUDAMUDA。muda無駄、無駄MUDAMUDAむだmudaむだmuda。MUDA、無駄mudaむだMUDA。むだMUDA、、無駄。muda無駄MUDA。muda、無駄mudaむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAムダmudaムダmudamudamudaムダムダmudamudaむだmudamuda。mudamuda無駄、無駄MUDAMUDAMUDAむだmudaむだmudamuda。MUDAMUDA、無駄mudamudaむだMUDAMUDA。むだMUDA、、無駄。muda無駄MUDA。muda、無駄mudamudaむだむだむだむだむだMUDAMUDAMUDAMUDAMUDAMUDAMUDAMUDAムダmudaムダmudaムダムダmudamudaむだmudamuda。MUDAむだMUDA、、無駄。muda無駄MUDA。muda、無駄mudamudamudamudamuda、mudamudamudamuda。MUDAMUDAMUDAMUDA、ムダMUDAMUDAMUDAMUDA。MUDA。MUDAMUDAムダmudamudamudamudamudamuda無駄。" />
-            </details>
-            <details className={styles.description_details}>
-              <summary className={styles.code}>ラッシュ</summary>
-              <textarea readOnly className={styles.text_area_wide} defaultValue="、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraおらORAORAORAORA折羅。oraoraoraoraおらおらおらおらおらオラORAORAORAORA、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ora、折羅。ORAORAORAORAORAおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraおらおらおらおらおらおらおらおらおらおら、oraORA折羅。oraORAORA折羅。oraoraおらORAORAORA折羅。oraoraoraORAORAORAORA折羅。oraoraoraoraおらおらおらおらオラORAORAORAORA" />
-            </details>
+            <div className="justify-evenly py-4 sm:py-10 sm:flex">
+              <div className={styles.flex_item}>
+                <button className={styles.hvr_sweep_to_right}
+                    onClick={() => setCode(code_helloworld)}
+                >print(&quot;Hello World!&quot;)</button>
+              </div>
+              
+              <div className={styles.flex_item}>
+                <button className={styles.hvr_sweep_to_right}
+                    onClick={() => setCode(code_abc)}
+                >print(&quot;ABC&quot;)</button>
+              </div>
+
+              <div className={styles.flex_item}>
+                <button className={styles.hvr_sweep_to_right}
+                    onClick={() => setCode(code_FizzBuzz)}
+                >FizzBuzz</button>
+              </div>
+
+              <div className={styles.flex_item}>
+                <button className={styles.hvr_sweep_to_right}
+                    onClick={() => setCode(code_rush)}
+                >ラッシュの速さ比べ</button>
+              </div>
+            </div>
           </div>
 
           <div className={styles.modal_help_button_container}>

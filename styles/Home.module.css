@@ -156,7 +156,7 @@
   justify-content: flex-start;
   align-items: center;
   height: auto;
-  width: auto;
+  width: 100%;
 }
 
 .flex_description_container {
@@ -192,35 +192,23 @@
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18);
   object-fit: cover;
+  padding: 5px;
   width: 300px;
-  height: 300px;
-  font-size: 0.9rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.text_area_wide {
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-  backdrop-filter: blur( 2.0px);
-  -webkit-backdrop-filter: blur( 2.0px);
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18);
-  object-fit: cover;
-  width: 750px;
-  height: 200px;
+  height: 350px;
   font-size: 0.9rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .hvr_sweep_to_right {
+  width: 190px;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   color: #67c5ff;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   border: solid 2px #67c5ff;
   border-radius: 3px;
@@ -357,14 +345,15 @@
     width: 350px;
   }
 
-  .text_area_wide {
+  .text_area {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
     backdrop-filter: blur( 2.0px);
     -webkit-backdrop-filter: blur( 2.0px);
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18);
     object-fit: cover;
-    width: 350px;
+    padding: 5px;
+    width: 300px;
     height: 200px;
     font-size: 0.9rem;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
