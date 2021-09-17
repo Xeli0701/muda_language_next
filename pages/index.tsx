@@ -39,21 +39,22 @@ export default function Home() {
 
 
     
-      <header className={styles.header}>
-        <h1>MudaLang</h1>
-        <nav>
-          <div>無駄言語をオンライン上でコンパイルします。</div>
-        </nav>
-      </header>
-
+      <div className="container mx-auto my-5">
+        <header className="flex justify-evenly items-center">
+            <Image
+                src={"/logo.png"}
+                alt="ロゴ"
+                width={600}
+                height={200}
+            />
+            <nav>
+            <div>無駄言語コンパイラ</div>
+            </nav>
+        </header>
+      </div>
+    
       <main className={styles.main}>
         <div className={styles.flex_column_container}>
-          
-          <div className={styles.flex_description_container}>
-            <div className={styles.description}>無駄言語を左のテキストエリアに入力し、真ん中のボタンを押してください</div>
-          </div>
-          
-
           <div className={styles.flex_row_container}>
             <div className={styles.flex_item}>
               <label>
@@ -122,7 +123,7 @@ export default function Home() {
                 <div className="m-4 text-lg text-white">使い方</div>
                   <div className="m-1 ml-16 text-sm text-white">ようこそ。このサービスは無駄言語(mudaLang)をコンパイルするために用いられます。</div>
                   <div className="m-1 ml-16 text-sm text-white">左のボックスに入れて、真ん中のボタンを押すと、右のボックスに結果が出力されます！</div>
-                  <div className="m-1 ml-16 text-sm text-white">無駄言語のサンプルコードはサイト下部Exampleに折りたたまれています👍</div>
+                  <div className="m-1 ml-16 text-sm text-white">無駄言語のサンプルコードはExampleのボタンを押すと出ます👍</div>
                   <div className="m-1 ml-16 text-sm text-white">言語仕様は<a href="https://github.com/Xeli0701/muda_language_next#%E8%A8%80%E8%AA%9E%E4%BB%95%E6%A7%98" rel="noreferrer" target="_blank" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">こちら</a>を確認してください！</div>
                   <div className="m-1 ml-16 text-xs text-white">(要するに、Brainfxck系言語と言う存在も価値も時間も全てが無駄な言語です。あとHerokuのFreeプランなのでボタンを押しても20秒ぐらい反応しない時があります。)</div>
                 <div className="m-4 text-lg text-white">Repository</div>
